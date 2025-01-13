@@ -44,3 +44,8 @@ int romanToInt(char* s) {
     
     return out;
 }
+
+int main(void){
+    printf("%d\n", romanToInt("MCMXCIV"));
+    return 0;
+}

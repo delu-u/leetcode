@@ -33,6 +33,7 @@ bool canBeValid(char* s, char* locked) {
     
 }
 
+//unfinished
 int main(void){
     canBeValid("))()))", "010100");
     return 0;
