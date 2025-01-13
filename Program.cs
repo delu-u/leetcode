@@ -1,6 +1,4 @@
-﻿using System.Security.Cryptography.X509Certificates;
-
-namespace Leetcode;
+﻿namespace Leetcode;
 
 class Solutions{
     static void Main(string[]args){
