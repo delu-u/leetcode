@@ -1,10 +1,21 @@
 #include <stdio.h>
+#include <math.h>
 
 int maxArea(int* height, int heightSize) {
-    int max = 0;
-    for(int i = 0; i < heightSize; i++){
-        
+    int max = 0, *start = height, *end = height+heightSize-1;
+    while(start!=end){
+        if(*start>*end) {
+            if(*end*abs(start-end) > max)
+                max = *end*abs(start-end);
+            end--;
+        }
+        else {
+            if(*start*abs(start-end) > max)
+                max = *start*abs(start-end);
+            start++;
+        }
     }
+    return max;
 }
 
 int main(void){
